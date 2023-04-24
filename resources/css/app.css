@@ -1,0 +1,119 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.blink {
+  background: linear-gradient(90deg, #ffa800, #ffcc00);
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  animation: blink 1s linear infinite;
+}
+
+.btn-pink {
+  background-color: #ff69b4;
+  border-color: #ff69b4;
+  color: #fff;
+}
+
+.btn-pink:hover {
+  background-color: #ff1493;
+  border-color: #ff1493;
+  color: #fff;
+}
+
+.btn-camo {
+  background-color: #556b2f;
+  border-color: #556b2f;
+  color: #fff;
+}
+
+.btn-camo:hover {
+  background-color: #8fbc8f;
+  border-color: #8fbc8f;
+  color: #fff;
+}
+
+.blink-1 {
+  background: linear-gradient(90deg, #f00534, #eda6b4);
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  animation: blink 1s linear infinite;
+}
+
+
+.blink-2 {
+  background: linear-gradient(90deg, black, white);
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  animation: blink 1s linear infinite;
+}
+.blink-3 {
+  background: linear-gradient(90deg, brown, white);
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  animation: blink 1s linear infinite;
+}
+.blink-4 {
+  background: linear-gradient(90deg, purple, black);
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  animation: blink 1s linear infinite;
+}
+.blink-green {
+  background: linear-gradient(90deg, #3fbf3f, #00af00);
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+}
+
+img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

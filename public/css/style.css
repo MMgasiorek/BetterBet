@@ -1,0 +1,223 @@
+ /* Add animation to "page content" */
+ .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+  #loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("img/app/loader.bmp"); /* podaj ścieżkę do zdjęcia */
+    background-size: cover;
+    animation-name: loader-animation;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes loader-animation {
+    0% {
+      transform: scale(1);
+    }
+    33% {
+      transform: scale(1.8);
+    }
+    66% {
+      transform: scale(0.3);
+    }
+    100% {
+        transform: scale(1);
+      }
+}
+
+/* Ukryj modal na początku */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Styl dla zawartości modala */
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Styl dla przycisku "zamknij" */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .alkat {
+    font-family: 'Alkatra', cursive;
+}
+
+.badge-pulsate-fif {
+    animation: pulse 2s infinite;
+    background-color: #9523f3;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+  }
+
+  .badge-pulsate-hot {
+    animation: pulse 1s infinite;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+  }
+
+    .badge-pulsate-wow {
+    animation: pulse 1.5s infinite;
+    background-color: #05b2f7;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.navbars {
+    height: 60px; /* przykładowa wysokość */
+  }
+  
+.navbars img {
+    max-height: 100%;
+  }
+
+  .btn-logreg {
+    background-color: #00a2e8;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-logreg:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+
+  .backround_blue 
+  {
+    background-color: #00a2e8;
+  }
+  .text_blue 
+  {
+    color: #00a2e8;
+  }
+  .big_font
+  {
+    font-size: 60px;
+  }
+
+  .image-floating {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  .image-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-image {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card-image:hover {
+    transform: scale(0.8);
+  }
+  
+  .card-image:hover:after {
+    transition: transform 0.3s ease-in-out;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.25);
+  }
