@@ -3,7 +3,7 @@
 Do you like to play a ticket at the bookmaker sometimes? Increase the excitement for the event you are watching. But the bet tax and the bookmaker's start profit by odds
 gives you the impression that the bet is unfavorable?  Use BetterBet.
 
-<img src="public/img/readme/m1.png"></img>
+<img src="public/img/readme/m0.png"></img>
 
 ## Rules
 
@@ -12,7 +12,7 @@ Users create their own coupons that can contain many matches, in addition, they 
 Other users can take them and the competition begins. No markup, no taxes
 
 
-<img src="public/img/readme/m2.png"></img>
+<img src="public/img/readme/m1.png"></img>
 
 ## Details 
 
@@ -21,7 +21,7 @@ The user has the option to add multiple matches per coupon, along with their own
 Then he can approve it. Then other users can play on it.
 
 
-<img src="public/img/readme/m3.png"></img>
+<img src="public/img/readme/m2.png"></img>
 
 ## Details 
 
@@ -30,6 +30,7 @@ The results of the matches are also downloaded periodically through the API.
 After all matches on the coupon are completed, notifications are sent to participating players.
 The whole game after logging in in closed groups.
 
+<img src="public/img/readme/m3.png"></img>
 
 ### How to use
 
